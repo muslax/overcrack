@@ -103,6 +103,8 @@ class Post
                 }
                 
                 if (isset($this->headers['link'])) $this->type = 'link';
+                if (! isset($this->headers['description'])) $this->headers['description'] = '';
+                if (! isset($this->headers['image'])) $this->headers['image'] = '';
             }
             array_shift($segments);
         }
@@ -200,6 +202,8 @@ class Post
                 'post-absolute-permalink-or-link' => rtrim(self::$blog_url, '/') . (isset($this->headers['link']) && $this->headers['link'] ? $this->headers['link'] : $base_uri . '/' . $this->slug),
 
                 'post-is-first-on-date' => $this->is_first_post_on_this_date ? 'yes' : '',
+                'post-description' => $this->headers['description'],
+                'post-image' => $this->headers['image'],
             )
         );
     }
