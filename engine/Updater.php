@@ -56,6 +56,24 @@ class Updater
     private static $types_to_be_updated = array();
     private static $posts_to_be_updated = array();
     private static $pages_to_be_updated = array();
+    
+    // Adapted from most_recent_post_filenames($limit, $require_tag, $require_type)
+    public static function post_filenames_in_year($year)
+    {
+        $cache_fname = self::$cache_path . '/dir-' . md5(self::$source_path . '/posts');
+        if (! file_exists($cache_fname)) throw new Exception('Cache files not found, expected in [' . self::$cache_path . ']');
+            $fileinfo = unserialize(file_get_contents($cache_fname));
+            krsort($fileinfo); // reverse-chrono
+
+            $posts = array();
+            foreach ($fileinfo as $filename => $info) {
+                if (substr($filename, -(strlen(self::$post_extension))) != self::$post_extension) continue;
+                list($ignored_hash, $type, $tags) = explode('|', $info, 3);
+                if (strpos($filename, '/posts' . '/' . $year . '/') > 5) $posts[] = $filename;
+            }
+        krsort($posts);
+        return $posts;
+    }
         
     public static function posts_in_year_month($year, $month, $require_tag = false, $require_type = false)
     {
