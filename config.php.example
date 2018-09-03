@@ -6,7 +6,8 @@ require_once(dirname(__FILE__) . '/engine/Updater.php');
 
 // ----- You can edit these settings: -----
 
-date_default_timezone_set('America/New_York'); // Sometimes I hate PHP. This is one of those times.
+date_default_timezone_set('Asia/Jakarta'); // Sometimes I hate PHP. This is one of those times.
+setlocale(LC_ALL, 'id_ID');
 
 // Paths
 Updater::$source_path   = '/home/marco/Dropbox/Blog';
