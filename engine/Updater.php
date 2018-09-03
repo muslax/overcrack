@@ -8,7 +8,7 @@ class Updater
     public static $source_path;
     public static $dest_path;
     public static $cache_path;
-    public static $post_extension = '.txt';
+    public static $post_extension = '.md';
     
     // This option writes each draft preview into (web root)/drafts/whatever-slug
     // Without it, drafts only reside in the (source)/drafts/_previews folder 
@@ -16,7 +16,7 @@ class Updater
     public static $write_public_drafts = false;
 
     public static $frontpage_post_limit = 20;
-    public static $frontpage_template = 'main.php';
+    public static $frontpage_template = 'overcrack.php';
     public static $frontpage_tag_filter = '!rss-only';
     public static $frontpage_type_filter = false;
     public static $frontpage_paginate = false;
@@ -27,21 +27,21 @@ class Updater
     public static $rss_type_filter = false;
 
     public static $rss2_post_limit = 20;
-    public static $rss2_template = 'rss2.php';
+    public static $rss2_template = 'rss.php';
     public static $rss2_tag_filter = '!site-only';
     public static $rss2_type_filter = false;
     
-    public static $archive_month_template = 'main.php';
-    public static $archive_year_template = 'main.php';
+    public static $archive_month_template = 'overcrack.php';
+    public static $archive_year_template = 'overcrack.php';
     public static $archive_tag_filter = '!rss-only';
     public static $archive_type_filter = '!ad';
     
     public static $tag_page_post_limit = 20;
     
-    public static $permalink_template = 'main.php';
-    public static $tag_page_template  = 'main.php';
-    public static $type_page_template = 'main.php';
-    public static $page_template      = 'main.php';
+    public static $permalink_template = 'overcrack.php';
+    public static $tag_page_template  = 'overcrack.php';
+    public static $type_page_template = 'overcrack.php';
+    public static $page_template      = 'overcrack.php';
     
     public static $api_blog_id = 1;
     public static $api_blog_username = '';
