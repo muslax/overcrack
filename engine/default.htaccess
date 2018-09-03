@@ -1,6 +1,6 @@
 Options -MultiViews
 
-AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript text/xml text/rss text/rss+xml
+AddOutputFilterByType DEFLATE image/gif image/png image/jpeg text/html text/plain text/css text/javascript text/xml text/rss text/rss+xml
 
 RewriteEngine On
 
