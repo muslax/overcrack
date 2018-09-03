@@ -50,6 +50,7 @@ class Updater
     public static $changes_were_written = false;
     
     private static $index_to_be_updated = false;
+    private static $index_years_to_be_updated = array();
     private static $index_months_to_be_updated = array();
     private static $tags_to_be_updated = array();
     private static $types_to_be_updated = array();
@@ -465,6 +466,7 @@ class Updater
             $month = substr($filename, $yearpos + 5, 2);
             $day = substr($filename, $yearpos + 14, 2);
             $resequence_days[$year . $month . $day] = array($year, $month, $day);
+            self::$index_years_to_be_updated[$year] = true;
             self::$index_months_to_be_updated[$year . '-' . $month] = true;
             self::$index_to_be_updated = true;
         }
