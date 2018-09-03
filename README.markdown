@@ -1,6 +1,6 @@
 ![](overcrack-ssmb.png)
 
-Overcrack is a fork from Marco Arment's [Second Crack](https://github.com/marcoarment/secondcrack). For installation and other issues please consult the original content of Second Crack's README which comes below after horizontal line. 
+Overcrack is a fork from Marco Arment's [Second Crack](https://github.com/marcoarment/secondcrack). For installation and other issues please consult the original Second Crack's README which comes below after horizontal line. 
 
 <br><br>
 
