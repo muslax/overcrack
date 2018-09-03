@@ -1,0 +1,221 @@
+/* Simple CSS for overcrack.php */
+
+html { font-size:62.5%; }
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #464646;
+    background-color: #ffffff;
+    font-family: BlinkMacSystemFont, -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    text-align: left;
+    text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+}
+
+a,a:active,a:visited {color: #008f00;}
+
+a:hover {color:#00aa00;}
+
+pre {
+	overflow:auto;
+}
+
+img {width:100%;}
+
+blockquote {
+	margin-left:3px;
+	padding:0 1.5rem;
+	border-left:3px solid #eaeaea;
+}
+
+h1,h2,h3,h4,h5,h6 {margin-top:0;}
+
+h2 {
+	font-size:2.6rem;
+	font-weight:normal;
+}
+
+h2 a {text-decoration:none;}
+#mastheadbackground {
+	height:20rem;
+	margin-bottom: -20rem;
+}
+
+.link h2 {
+	font-size:1.8rem;
+	font-weight:600;
+	line-height:1.75;
+}
+
+.link h2 a {
+	padding:2px 0 2px 0;
+	border-bottom: 1px solid #aadcaa;
+}
+
+.link h2 a.permalink,.link h2 a.permalink:active,.link h2 a.permalink:visited {
+	border-bottom-width: 0;
+	margin-left:0.8rem;
+	color: #ccc;
+}
+
+.link h2:hover a.permalink {color:#434343;}
+
+.link h2 a.permalink:hover {color:#009000;}
+
+#green-bg {
+	height:11.5rem;
+	background:#5bca3e;
+}
+
+#masthead {
+	position:relative;
+	margin-bottom:7rem;
+}
+
+#logo {
+float: left;
+display: block;
+width: auto;
+font-size: 4rem;
+text-decoration: none;
+margin-top: 3.5rem;
+margin-bottom: 0.5rem;
+margin-left: -0.3rem;
+}
+
+#logo img {width:22.5rem;}
+
+#tagline {
+clear: both;
+color: #005000;
+letter-spacing: 0rem;
+margin-bottom: 1.6rem;
+text-shadow: 1px 1px 1px rgba(255,255,255, .25);
+}
+
+#tagline span {
+font-size: 1.7rem;
+margin-right: 0.7rem;
+color: #03a112;
+}
+
+#top-menu {
+color: #ada;
+word-spacing: 1rem;
+font-size: 1.3rem;
+font-weight: 600;
+text-transform: uppercase;
+padding-bottom: 3px;
+border-bottom: 1px solid #b0efb0;
+}
+
+#top-menu a:link, #top-menu a:active, #top-menu a:visited {
+color: #303030;
+font-weight: 400;
+text-decoration: none;
+letter-spacing: 0.0825rem;
+}
+
+
+
+#posts {
+	max-width:62rem;
+	padding:0 5rem;
+	margin:0 auto;
+}
+
+article {
+	padding-top:3.5rem;
+	margin-bottom:3.5rem;
+	border-top: 1px dotted #eaeaea;
+}
+
+article.link {
+	padding-top:2.5rem;
+	margin-bottom:3rem;
+}
+
+article:first-of-type, .dateline + article {
+	padding-top:0;
+	border-top-width:0;
+}
+
+.year-archive article {
+	padding:0;
+	margin-bottom:0.5rem;
+	border-top-width:0;
+}
+
+article:last-of-type {
+	margin-bottom:12rem;
+}
+
+.dateline {
+color: #999;
+font-size: 1.3rem;
+line-height: 4.5rem;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+margin-top: 5rem;
+margin-bottom: 4rem;
+padding-top:3px;
+border-top:1px solid #eaeaea;
+}
+
+.dateline:before {
+	content:'';
+	display:block;
+	height:0;
+	border-bottom:1px solid #dddddd;
+}
+
+.year-archive .dateline {
+	margin-top: 4rem;
+	margin-bottom: 2rem;
+}
+
+.year-archive h3 {
+	color: #888888;
+	font-weight:normal;
+}
+
+.year-archive span {font-size:1.3rem;}
+
+#masthead + .dateline {
+	padding-top:0;
+	border-top-width:0;
+	margin-top:-7rem;
+}
+
+#masthead + .dateline:before {
+	border-bottom-width:0;
+}
+
+.post-date {
+	display: none;
+}
+
+.post .post-date {
+	display:block;
+	color:#aaaaaa;
+
+#archives {margin-bottom:5rem;}
+
+#archives > div {
+	overflow:hidden;
+}
+
+#archives table {
+	color:#888888;
+	float:left;
+	margin:0 1.5rem 1.5rem 0;
+}
+
+#archives td {
+	width:3.5rem;
+}
