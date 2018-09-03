@@ -18,7 +18,7 @@ I need this for showing-off the simplicity of static Markdown blogging. Markdown
 
 ![](archive-calendar.png)
 
-By default Overcrack use the new `overcrack.php` as main template. This template demonstrate the yearly archive pages and calendar-like format in presenting archives links.
+By default Overcrack use the new `overcrack.php` template which will add yearly archive pages.
 
 ## Additional installation info
 
