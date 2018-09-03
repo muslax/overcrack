@@ -599,6 +599,22 @@ class Updater
                 self::$rss2_template
             );
         }
+        
+        foreach (self::$index_years_to_be_updated as $year => $x) {
+             error_log("Updating year index: $year");
+             self::$changes_were_written = true;
+
+             $posts = Post::from_files(self::post_filenames_in_year($year));
+             $ts = mktime(0, 0, 0, 7, 15, $year);
+             Post::write_index(
+                 self::$dest_path . "/$year/index.html", 
+                 'Archive of ' .  date('Y', $ts), // page-title
+                 'year-archive', // page-type
+                 $posts, 
+                 self::$archive_year_template,
+                 self::archive_array()
+             );
+         }
 
         foreach (self::$index_months_to_be_updated as $ym => $x) {
             error_log("Updating month index: $ym");
