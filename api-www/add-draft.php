@@ -58,6 +58,8 @@ $draft_contents =
     $title . "\n" . 
     str_repeat('=', max(10, min(40, strlen($title)))) . "\n" .
     ($is_link ? "Link: " . $url . "\n" : '') .
+    "Description: ". ($is_link ? 'Article linked to '. $url : '') . ".\n" .
+    "Image: " . "\n" .
     "publish-not-yet\n" .
     "\n" .
     $body
