@@ -31,11 +31,15 @@ Example posts (articles and linked posts) will be provided so you can test and t
 - Move/copy `show-markdown.php` in `engine` folder to `www`.
 - Open `show-markdown.php` in your editor, go to line 6, and change `$prefix` value to suit your environment.
 
+<br><br>
 
+(After the line below is the original content of Second Crack's README.
+
+<br><br>
 
 * * * *
 
-
+<br><br>
 
 Second Crack is a basic static-file blog engine using Markdown-formatted text files as input.
 
