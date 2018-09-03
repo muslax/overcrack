@@ -18,7 +18,8 @@ $bookmarklet_code = <<<EOF
 var d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),l=d.location,e=encodeURIComponent;w.location.href='TARGET?u='+e(l.href)+'&t='+e(d.title)+'&s='+e(s)+'&EXTRA';
 EOF;
 
-$bookmarklet_code = str_replace('TARGET', $_SERVER['SCRIPT_URI'], trim($bookmarklet_code));
+$script_uri = $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['SERVER_NAME'].$_SERVER['SCRIPT_NAME'];
+$bookmarklet_code = str_replace('TARGET', $script_uri, trim($bookmarklet_code));
 
 if (! isset($_GET['u'])) {
     ?>
