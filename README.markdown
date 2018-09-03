@@ -32,7 +32,10 @@ Example posts (articles and linked posts) will be provided so you can test and t
 - Open `show-markdown.php` in your editor, go to line 6, and change `$prefix` value to suit your environment.
 
 
-======
+
+* * * *
+
+
 
 Second Crack is a basic static-file blog engine using Markdown-formatted text files as input.
 
