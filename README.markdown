@@ -20,6 +20,10 @@ I need this for showing-off the simplicity of static Markdown blogging. Markdown
 
 By default Overcrack use the new `overcrack.php` template which will add yearly archive pages.
 
+## Example posts
+
+Example posts (articles and linked posts) will be provided so you can test and tweak the template right after Overcrack installation. Example posts can then be deleted (using script provided).
+
 ## Additional installation info
 
 - Move/copy the supplied `main.css` in `example-templates` folder to `www`.
