@@ -1,3 +1,35 @@
+![](overcrack-ssmb.png)
+
+Overcrack is a fork from Marco Arment's [Second Crack](https://github.com/marcoarment/secondcrack). Original content of Second Crack's README file comes below after horizontal line. 
+
+## Yearly archives
+
+Yes, it is small addition. I use it to serve yearly index which contains links to all posts in one year.
+
+## Description and image fields in post
+
+I added description (`post-description`) and image (`post-image`) fields in `Post.php` and updated `add-draft.php` in `www-api` folder accordingly so those new two fields are always ready in every draft created from bookmarklets. The reason for this, you may guess, is for Twitter Card and Facebook Open Graph.
+
+## Serving post's Markdown source
+
+I need this for showing-off the simplicity of static Markdown blogging. Markdown source for each post can be demonstrated by adding `/markdown` after the post's URL. This is done through the updated `.htaccess` file and `show-markdown.php` script which should be placed in web root folder.
+
+## Working template
+
+![](archive-calendar.png)
+
+By default Overcrack use the new `overcrack.php` as main template. This template demonstrate the yearly archive pages and calendar-like format in presenting archives links.
+
+## Additional installation info
+
+- Move/copy the supplied `main.css` in `example-templates` folder to `www`.
+- Place `overcrack-white.svg`, found also in `example-templates` folder to `www/media/`.
+- Move/copy `show-markdown.php` in `engine` folder to `www`.
+- Open `show-markdown.php` in your editor, go to line 6, and change `$prefix` value to suit your environment.
+
+
+====
+
 Second Crack is a basic static-file blog engine using Markdown-formatted text files as input.
 
 # Warning
