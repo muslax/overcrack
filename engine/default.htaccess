@@ -7,7 +7,7 @@ RewriteEngine On
 RewriteRule ^([^\.]*)$ - [T=text/html]
 
 # RewriteCond for serving Markdown resource
-RewriteCond %{REQUEST_URI} /([0-9]+)/([0-9]+)/([0-9]+)/(.*)/markdown$
+RewriteCond %{REQUEST_URI} /([0-9]{4})/([0-9]{2})/([0-9]{2})/(.*)/markdown$
 RewriteRule .* show-markdown.php
 
 RewriteCond %{REQUEST_FILENAME} !-f
