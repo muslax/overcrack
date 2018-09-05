@@ -125,6 +125,7 @@ if ($content['page-type'] != 'year-archive') { ?>
                 </p>
             </footer>
         </section>
+<? if ($content['page-type'] == 'page' || $content['page-type'] == 'post') { ?>
 <script type="text/javascript">
 // Shortcut to show-markdown
 document.addEventListener("keydown", function(zEvent) { 
@@ -133,5 +134,6 @@ document.addEventListener("keydown", function(zEvent) {
     }
 });
 </script>
+<? } ?>
     </body>
 </html>
