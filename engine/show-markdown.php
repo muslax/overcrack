@@ -1,10 +1,10 @@
 <?php
 /** show-markdown.php **/
-
+require_once(realpath(dirname(__FILE__) . '/..') . '/config.php');
 list($y, $m, $d, $f) = explode('/', substr($_SERVER['REQUEST_URI'], 1), 5);
 $seek = $f . '.md';
-$prefix = '/path/to/blog/posts/'; // Path to posts folder, please change to suit your environment
-$directory = $prefix . $y . '/' . $m;
+$path = Updater::$source_path . '/' . 'posts/';
+$directory = $path . $y . '/' . $m;
 if (file_exists($directory)) {
     $files = scandir($directory);
     foreach ($files as $file) {
