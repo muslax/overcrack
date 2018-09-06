@@ -31,7 +31,6 @@
                     <a href="/about">About</a>&nbsp;/
                     <a href="/contact">Contact</a>&nbsp;/
                     <a href="/help">Documentation</a>
-                    <div style="float:right">✪ ✪ ✪</div>
                 </nav>
             </div>
             
