@@ -9,6 +9,7 @@ class Updater
     public static $dest_path;
     public static $cache_path;
     public static $post_extension = '.md';
+    public static $permalink_extension = '';
     
     // This option writes each draft preview into (web root)/drafts/whatever-slug
     // Without it, drafts only reside in the (source)/drafts/_previews folder 
@@ -409,7 +410,7 @@ class Updater
             if (! file_exists($filename)) {
                 if (ends_with($filename, self::$post_extension)) {
                     error_log("Deleted page $filename");
-                    $dest_filename = self::$dest_path . '/' . substring_before(basename($filename), '.', true);
+                    $dest_filename = self::$dest_path . '/' . substring_before(basename($filename), '.', true) . self::$permalink_extension;
                     if (file_exists($dest_filename)) safe_unlink($dest_filename);
                 }
                 continue;
@@ -498,7 +499,7 @@ class Updater
                     $month = substr($filename_datestr, 4, 2);
                     $day = substr($filename_datestr, 6, 2);
                     $slug = substr(basename($filename), 12, -(strlen(self::$post_extension)));
-                    $target_filename = self::$dest_path . "/$year/$month/$day/$slug";
+                    $target_filename = self::$dest_path . "/$year/$month/$day/$slug" . self::$permalink_extension;
                     if ($year && $month && $day && $slug && file_exists($target_filename)) {
                         error_log("Deleting abandoned target file: $target_filename");
                         safe_unlink($target_filename);
