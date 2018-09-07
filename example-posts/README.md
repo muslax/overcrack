@@ -1,3 +1,0 @@
-# Overcrack Example Posts
-
-To download the example posts...
