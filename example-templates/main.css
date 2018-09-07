@@ -25,11 +25,15 @@ a:hover {color:#00aa00;}
 
 pre {
 	overflow:auto;
-	font-size: 1.6rem;
-	line-height: 1.25;
+	font-size: 1.5rem;
+	line-height: 1.4;
 	padding: 1rem;
 	background: #f8f8f8;
 	white-space: pre-wrap;
+}
+
+code {
+    font-size:1.5rem;
 }
 
 img {width:100%;}
