@@ -1,4 +1,6 @@
 /* Simple CSS for overcrack.php */
+/* Line added at loctest */
+/* Added again */
 
 html { font-size:62.5%; }
 
@@ -23,6 +25,11 @@ a:hover {color:#00aa00;}
 
 pre {
 	overflow:auto;
+	font-size: 1.6rem;
+	line-height: 1.25;
+	padding: 1rem;
+	background: #f8f8f8;
+	white-space: pre-wrap;
 }
 
 img {width:100%;}
