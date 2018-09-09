@@ -129,7 +129,7 @@ if ($content['page-type'] != 'year-archive') { ?>
 // Shortcut to show-markdown
 document.addEventListener("keydown", function(zEvent) { 
     if(zEvent.ctrlKey && zEvent.code === "KeyM") {
-        window.location.href = window.location.href + '/markdown';
+        window.location.href = window.location.href + '=markdown';
     }
 });
 </script>
